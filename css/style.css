@@ -1,0 +1,371 @@
+/* ==========================================
+   VisionCraft AI - Main Stylesheet
+========================================== */
+
+/* ---------- CSS Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Root Variables ---------- */
+
+:root {
+
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+
+    --secondary-color: #1e293b;
+
+    --background-color: #f5f7fa;
+
+    --card-color: #ffffff;
+
+    --border-color: #d1d5db;
+
+    --text-color: #1f2937;
+
+    --success-color: #22c55e;
+
+    --error-color: #ef4444;
+
+}
+
+/* ---------- Body ---------- */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--background-color);
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+}
+
+/* ---------- Header ---------- */
+
+header {
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+}
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 0;
+
+}
+
+.logo h1 {
+
+    color: var(--primary-color);
+
+    font-size: 2rem;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: var(--secondary-color);
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.nav-links a:hover {
+
+    color: var(--primary-color);
+
+}
+
+/* ---------- Hero ---------- */
+
+#hero {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    text-align: center;
+
+}
+
+#hero h2 {
+
+    font-size: 2.7rem;
+
+    margin-bottom: 15px;
+
+}
+
+#hero p {
+
+    font-size: 1.15rem;
+
+    color: #555;
+
+}
+
+/* ---------- Sections ---------- */
+
+section {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 35px auto;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+
+}
+
+section h2 {
+
+    margin-bottom: 25px;
+
+    color: var(--secondary-color);
+
+}
+
+/* ---------- Form ---------- */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+input[type="text"]:focus,
+textarea:focus {
+
+    border-color: var(--primary-color);
+
+}
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 150px;
+
+}
+
+/* ---------- Image Preview ---------- */
+
+#image-preview {
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    min-height: 200px;
+
+    border: 2px dashed var(--border-color);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #777;
+
+    background: #fafafa;
+
+    overflow: hidden;
+
+}
+
+#image-preview img {
+
+    max-width: 100%;
+
+    max-height: 300px;
+
+    object-fit: contain;
+
+}
+
+/* ---------- Button ---------- */
+
+button {
+
+    width: 100%;
+
+    background: var(--primary-color);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    background: var(--primary-hover);
+
+}
+
+/* ---------- Jobs ---------- */
+
+#jobs-container {
+
+    min-height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 2px dashed var(--border-color);
+
+    border-radius: 10px;
+
+    color: #777;
+
+    background: #fafafa;
+
+}
+
+/* ---------- Result ---------- */
+
+#result-container {
+
+    min-height: 250px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border: 2px dashed var(--border-color);
+
+    border-radius: 10px;
+
+    color: #777;
+
+    background: #fafafa;
+
+    overflow: hidden;
+
+}
+
+#result-container img {
+
+    max-width: 100%;
+
+    max-height: 400px;
+
+    object-fit: contain;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    margin-top: 50px;
+
+    background: var(--secondary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}

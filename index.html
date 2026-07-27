@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VisionCraft AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1>VisionCraft AI</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#generate">Generate</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section id="hero">
+
+            <h2>AI Product Content Generator</h2>
+
+            <p>
+                Generate AI-powered product creatives from a product description
+                and a reference image.
+            </p>
+
+        </section>
+
+        <!-- Generate Form -->
+
+        <section id="generate">
+
+            <h2>Generate Product Image</h2>
+
+            <form id="generateForm">
+
+                <div class="form-group">
+
+                    <label for="product_name">Product Name</label>
+
+                    <input
+                        type="text"
+                        id="product_name"
+                        name="product_name"
+                        placeholder="Enter product name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="product_description">
+                        Product Description
+                    </label>
+
+                    <textarea
+                        id="product_description"
+                        name="product_description"
+                        rows="5"
+                        placeholder="Enter product description"
+                        required
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="image">
+                        Product Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="image"
+                        name="image"
+                        accept=".png,.jpg,.jpeg,.webp"
+                        required
+                    >
+
+                </div>
+
+                <div id="image-preview">
+
+                    <p>No image selected.</p>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="generate-btn"
+                >
+                    Generate Image
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Jobs -->
+
+        <section id="jobs">
+
+            <h2>Jobs</h2>
+
+            <div id="jobs-container">
+
+                <p>No jobs available.</p>
+
+            </div>
+
+        </section>
+
+        <!-- Result -->
+
+        <section id="result">
+
+            <h2>Generated Result</h2>
+
+            <div id="result-container">
+
+                <p>Generated image will appear here.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 VisionCraft AI. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/validation.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

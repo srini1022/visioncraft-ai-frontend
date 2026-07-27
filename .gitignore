@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Dependencies
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Environment
+.env
+.env.*
+
+# Temporary
+*.tmp
+*.temp
+
+# Editor backups
+*~
+*.swp
+*.swo

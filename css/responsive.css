@@ -1,0 +1,18 @@
+/* VisionCraft AI - Responsive Design */
+
+/* Mobile First Approach */
+
+/* Tablet Screens */
+@media (min-width: 768px) {
+    /* Tablet styles */
+}
+
+/* Desktop Screens */
+@media (min-width: 1024px) {
+    /* Desktop styles */
+}
+
+/* Large Desktop Screens */
+@media (min-width: 1440px) {
+    /* Large desktop styles */
+}
