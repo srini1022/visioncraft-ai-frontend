@@ -37,16 +37,15 @@ function showLoading() {
 }
 
 function hideLoading() {
-    // Intentionally left blank
+  // Intentionally left blank
 }
-
 
 function displayResult(job) {
   resultContainer.innerHTML = `
         <div class="result-card">
 
             <img
-                src="http://127.0.0.1:5000${job.generated_image}"
+                src="${BASE_URL}${job.generated_image}"
                 alt="Generated Image"
                 style="width:100%; border-radius:10px; margin-bottom:15px;"
             >
