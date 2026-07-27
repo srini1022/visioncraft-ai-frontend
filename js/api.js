@@ -2,7 +2,7 @@
    VisionCraft AI - Backend API
 ========================================== */
 
-const BASE_URL = "http://127.0.0.1:5000";
+const API_BASE_URL = "https://visioncraft-ai-backend-5g6f.onrender.com";
 
 async function healthCheck() {
 
